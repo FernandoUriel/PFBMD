@@ -1,0 +1,383 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body.modal-open .wrapper {
+  filter: blur(10px);
+}
+.container1,
+.container3 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.container2 {
+  padding-top: 6em;
+  margin-bottom: 6em;
+}
+.container3 {
+  padding-left: 12em;
+  padding-right: 12em;
+}
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.imgp{
+  width: 3em;
+  height: 3em;
+  object-fit: cover;
+}
+#img-logo {
+  width: 5em;
+  height: 3em;
+}
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dropdown-item {
+  color: greenyellow;
+}
+.dropdown-item:hover {
+  background-color: greenyellow;
+}
+.nav-let {
+  font-size: 1.7em;
+  color: greenyellow;
+  padding-left: 0.5em;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.nav-let:hover {
+  color: white;
+}
+/* Navbar Fin */
+
+/* Modal LogIn*/
+
+.modal {
+  font-family: "Chakra Petch", sans-serif;
+  opacity: 0.7;
+}
+.modal-header,
+.modal-footer,
+.modal-body {
+  background-color: black;
+}
+.modal-title {
+  color: greenyellow;
+}
+.btn-Log {
+  background-color: greenyellow;
+}
+.btn-Log:hover {
+  background-color: black;
+  border-color: greenyellow;
+  color: greenyellow;
+}
+.close {
+  color: greenyellow;
+}
+.close:hover {
+  color: white;
+}
+.i-log {
+  color: greenyellow;
+}
+/* Modal LogIn Fin */
+
+/* Carrusel */
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.c-item-1 {
+  object-fit: cover;
+  width: 1920px;
+  height: 1080px;
+}
+
+/* Carrusel Fin */
+
+/* Footer */
+.page-footer {
+  background-color: black;
+  color: greenyellow;
+}
+.footer-copyright {
+  background-color: greenyellow;
+  color: black;
+}
+/* Footer Fin */
+
+/* Section 01 */
+.c-card {
+  color: greenyellow;
+}
+
+.cont1 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-left: 10em;
+}
+.m-t {
+  color: greenyellow;
+}
+.img-c {
+  width: 12em;
+  height: 8em;
+  object-fit: cover;
+}
+
+.img-c1 {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+}
+
+.md-ni {
+  border-color: black;
+  border-radius: 1em;
+}
+
+.h2-l {
+  color: greenyellow;
+}
+/* Section 01 Fin */
+
+/* Registro */
+.btn-registrarse {
+  background-color: greenyellow;
+  color: black;
+  margin-top: 2em;
+  margin-left: 25em;
+}
+.btn-registrarse:hover {
+  background-color: white;
+  border-color: greenyellow;
+  color: black;
+}
+.register {
+  background: -webkit-linear-gradient(left, black, gray);
+  margin-top: 10%;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+.m-t-2 {
+  font-family: "Montserrat", sans-serif;
+  color: greenyellow;
+}
+.register-right {
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}
+.register .nav-tabs {
+  margin-top: 3%;
+  border: none;
+  background: greenyellow;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+.register .nav-tabs .nav-link {
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: black;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover {
+  border: none;
+}
+.register .nav-tabs .nav-link.active {
+  width: 100px;
+  color: black;
+  border: 2px solid greenyellow;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.img-r {
+  margin-top: 5em;
+  width: 12em;
+  height: 8em;
+  margin-bottom: 3em;
+}
+.h-reg {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15%;
+  margin-bottom: -10%;
+}
+.register-form {
+  padding: 7em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+/* Registro */
+
+/* Noticias */
+.img-ava {
+  width: 9em;
+  height: 10em;
+}
+.img-new {
+  width: 1080px;
+  height: 720px;
+  object-fit: none;
+}
+.btn-l {
+  background-color: greenyellow;
+  color: black;
+  border-color: greenyellow;
+}
+.btn-l:hover {
+  background-color: white;
+  border-color: greenyellow;
+  color: black;
+}
+/* Noticias Fin */
+
+/* Publicar Noticia */
+
+.btn-pub {
+  background-color: greenyellow;
+  color: black;
+  margin-bottom: 3em;
+}
+.input-mysize {
+  margin-left: 1em;
+  width: 69em;
+  height: 30em;
+  align-content: center;
+  margin-bottom: 1em;
+}
+.fl-lbl {
+  padding-left: 10em;
+}
+
+.space-b {
+  padding: 0.7em;
+}
+/* Publicar Noticia Fin  */
+
+/* Editar Noticia */
+.img-en {
+  width: 9em;
+  height: 5em;
+  object-fit: cover;
+}
+/* Editar Noticia Fin */
+/* Nav-bar Hamburger */
+.custom-toggler {
+  background-color: greenyellow;
+  color: greenyellow;
+}
+/* Nav-bar Hamburger Fin */
+
+/* Perfil */
+.p-black {
+  background-color: black;
+}
+.img-p {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+/* Fin perfil */
+
+/* Admin  */
+.ad-PP {
+  margin-top: 3em;
+  height: 15em;
+  width: 15em;
+  border-radius: 50%;
+}
+.sideMenu {
+  background-color: black;
+
+  border-bottom: 0.15em solid greenyellow;
+}
+.dash-item,
+.dash-item2 {
+  padding: 1em;
+}
+.dash-item:hover {
+  background-color: rgb(37, 35, 35);
+}
+.dash-item2:hover {
+  border: none;
+}
+.dash-text {
+  padding-left: 1em;
+  font-size: 1.5em;
+  color: greenyellow;
+  border: none;
+}
+.dash-text2 {
+  font-size: 1.5em;
+  color: greenyellow;
+  padding-left: 1em;
+  border: none;
+}
+.dash-text3 {
+  font-size: 1.2em;
+  color: greenyellow;
+  padding-left: 1em;
+  border: none;
+}
+.dash-text2:hover {
+  color: greenyellow;
+}
+.dash-text:hover {
+  color: white;
+}
+.content {
+  background-color: white;
+}
+/* Aprobar */
+.c-admin {
+  margin: 5em;
+  padding: 3em;
+  width: 25em;
+}
+.img-r-acc {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 15em;
+  width: 15em;
+}
+.tab-content1 {
+  overflow-y: scroll;
+}
+/* Aprobar Fin */
+
+/* Lista Reportero */
+.img-r-l {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+}
+/* Lista Reportero Fin */
+
+.seccion-d {
+  background-color: black;
+  align-content: center;
+  margin-left: 33em;
+  margin-right: 33em;
+}
+
+.i-admin {
+  align-content: center;
+}
+
+/* Color seccion */
+/* Fin color seccion */
+/* Admin Fin */
