@@ -8,11 +8,12 @@
     if($id >0){
        
         $img = $data->getImgn($id);
-        $imagen = $img['Avatar'];
+        $img_src=$img[0];
+           
         
-        header("Content-Type: image/jpg");
-               
-        echo $imagen;
+        $img_out= "data:img/png;base64,'.$img_src.'";
+                     
+        echo $img_out;
     }
 
 ?>

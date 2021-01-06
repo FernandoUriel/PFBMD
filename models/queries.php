@@ -64,12 +64,11 @@ class Consultas{
     public function getImgn($id){
         $st="SELECT Avatar FROM Usuario WHERE IdUsuario='$id'";
         $result= mysqli_query($this->db,$st) or die(mysqli_error());
+        $datos = mysqli_fetch_array($result);
+        $imagen = $datos[0];
         
-        $row = mysqli_fetch_assoc($result);
-        $imagen = $row["Avatar"];
-          
-         header ("Content type : image/jpg");
-       
+        header("Content-Type: image/jpeg");
+                     
         return $imagen;
     }
 

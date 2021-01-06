@@ -67,7 +67,7 @@
       > <?php echo $usrName;?></a
     >
   </li>
-  <?php if($tipoUsuario==2){
+  <?php if($tipoUsuario==1){
     ?>
     <li class="nav-item">
       <a href="<?php echo SERVERURL; ?>/adminDash" class="navbar-brand nav-let">Dashboard</a>

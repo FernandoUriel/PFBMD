@@ -30,32 +30,37 @@
         break;
 
         case 'registro-r':
-            $file = $_FILES['img-r'];
-            $tipo=3;
+            $file = $_FILES['img-r']["tmp_name"];
+            $tamanio = $_FILES['img-r']["size"];
+            $tipo = $_FILES['img-r']["type"];
+            $titulo = $_FILES['img-r']["name"];
+            
+            $tipo=2;
 
             if($file != "none"){
-                $fp = fopen($file,"r+b");
-                $contenido = fread($fp,filesize($file));
+                $fp = fopen($file,"rb");
+                $contenido = fread($fp,$tamanio);
+                
+                $image = base64_encode(file_get_contents($file));
                 fclose($fp);
-                $img = mysql_real_escape_string($contenido);
+               
                 $data->registrarse($_POST['nombre-r'],$_POST['apePaterno-r'],$_POST['apeMaterno-r'],$_POST['nickname-r'],$_POST['correo-r'],
-                               $_POST['contra-r'],$_POST['telefono-r'],$tipo,$img);
+                               $_POST['contra-r'],$_POST['telefono-r'],$tipo,$image);
             }
             
         break;
 
         case 'registro-u':
             
-            $file = $_FILES['img-u']['tmp_name'];
-            $tipo=4;
+            $file = $_FILES['img-u'];
+            $tipo=3;
 
             if($file != "none"){
-                $fp = fopen($file,"r+b");
+                $fp = fopen($file,"rb");
                 $contenido = fread($fp,filesize($file));
                 fclose($fp);
-                $img = mysql_real_escape_string($contenido);
                 $data->registrarse($_POST['nombre-u'],$_POST['apePaterno-u'],$_POST['apeMaterno-u'],$_POST['nickname-u'],$_POST['correo-u'],
-                                $_POST['contra-u'],$_POST['telefono-u'],$tipo,$img);
+                                $_POST['contra-u'],$_POST['telefono-u'],$tipo,$contenido);
             }
         break;
         case 'logout':
